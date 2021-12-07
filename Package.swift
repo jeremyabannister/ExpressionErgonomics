@@ -12,15 +12,12 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/jeremyabannister/UnwrapOrThrowOperator",
-            from: "0.1.0"
-        ),
+        
     ],
     targets: [
         .target(
             name: "ExpressionErgonomics",
-            dependencies: ["UnwrapOrThrowOperator"]
+            dependencies: []
         ),
         .testTarget(
             name: "ExpressionErgonomics_tests",
