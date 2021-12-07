@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FoundationTestToolkit",
+        "repositoryURL": "https://github.com/jeremyabannister/FoundationTestToolkit",
+        "state": {
+          "branch": null,
+          "revision": "6a771bdae6bc9af974d6eae13255e920550593c0",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "SingleTypeTesting",
+        "repositoryURL": "https://github.com/jeremyabannister/SingleTypeTesting",
+        "state": {
+          "branch": null,
+          "revision": "6009f1081513371d2761e293e1217a2135869660",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "XCTestToolkit",
+        "repositoryURL": "https://github.com/jeremyabannister/XCTestToolkit",
+        "state": {
+          "branch": null,
+          "revision": "13c5caa9e603888d4eba8040a9cc508dd9e080fa",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

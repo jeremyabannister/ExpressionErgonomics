@@ -12,16 +12,31 @@ let package = Package(
         ),
     ],
     dependencies: [
-        
+        .package(
+            url: "https://github.com/jeremyabannister/FoundationTestToolkit",
+            from: "0.1.0"
+        ),
+        .package(
+            url: "https://github.com/jeremyabannister/XCTestToolkit",
+            from: "0.1.1"
+        ),
     ],
     targets: [
         .target(
             name: "ExpressionErgonomics",
             dependencies: []
         ),
+        .target(
+            name: "ExpressionErgonomicsTestToolkit",
+            dependencies: ["ExpressionErgonomics", "FoundationTestToolkit", "XCTestToolkit"]
+        ),
         .testTarget(
             name: "ExpressionErgonomics_tests",
-            dependencies: ["ExpressionErgonomics"]
+            dependencies: ["ExpressionErgonomicsTestToolkit"]
+        ),
+        .testTarget(
+            name: "ExpressionErgonomicsTestToolkit_tests",
+            dependencies: ["ExpressionErgonomicsTestToolkit"]
         ),
     ]
 )
