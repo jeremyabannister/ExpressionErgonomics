@@ -31,6 +31,31 @@ public extension ExpressionErgonomic {
             return copy
     }
     
+    /// This method creates a mutable copy of the receiving instance, writes the given value (if it is not nil) to the given key path on the copy, and then returns the copy.
+    ///
+    /// This method is useful because it allows you to maintain a function body as just a single expression (meaning you don't have to write `return`) while still allowing you to mutate the input before returning it. For example:
+    ///
+    /// # Example
+    /// ```
+    /// func giveRandomNickname (to user: User) -> User {
+    ///     user
+    ///         .trySetting(
+    ///             \.nickname,
+    ///             to: generateRandomNickname()
+    ///         )
+    /// }
+    /// ```
+    func trySetting <Value> (_ keyPath: WritableKeyPath<Self, Value>,
+                             to newValue: Value?)
+        -> Self {
+        
+        ///
+        guard let newValue = newValue else { return self }
+        
+        ///
+        return self.setting(keyPath, to: newValue)
+    }
+    
     /// This method returns the receiving instance after performing the provided mutation on it.
     ///
     /// This method is useful because it allows you to maintain a function body as just a single expression (meaning you don't have to write `return`) while still allowing you to mutate the input before returning it. For example:
