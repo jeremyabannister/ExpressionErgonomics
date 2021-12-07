@@ -24,4 +24,5 @@ extension Set: ExpressionErgonomic { }
 extension String: ExpressionErgonomic { }
 extension URL: ExpressionErgonomic { }
 extension URLComponents: ExpressionErgonomic { }
+extension URLRequest: ExpressionErgonomic { }
 extension UUID: ExpressionErgonomic { }
