@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ErrorMessageType",
+        "repositoryURL": "https://github.com/jeremyabannister/ErrorMessageType",
+        "state": {
+          "branch": null,
+          "revision": "214ae162a54b30f8da9084b316233ffbbf26f4a4",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "UnwrapOrThrowOperator",
+        "repositoryURL": "https://github.com/jeremyabannister/UnwrapOrThrowOperator",
+        "state": {
+          "branch": null,
+          "revision": "64131e587f4169048de99cb2bbd790927aae9844",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

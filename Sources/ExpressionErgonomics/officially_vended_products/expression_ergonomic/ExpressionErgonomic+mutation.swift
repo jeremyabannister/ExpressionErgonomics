@@ -1,0 +1,108 @@
+//
+//  ExpressionErgonomic+mutation.swift
+//  
+//
+//  Created by Jeremy Bannister on 12/7/21.
+//
+
+///
+public extension ExpressionErgonomic {
+    
+    /// This method creates a mutable copy of the receiving instance, writes the given value to the given key path on the copy, and then returns the copy.
+    ///
+    /// This method is useful because it allows you to maintain a function body as just a single expression (meaning you don't have to write `return`) while still allowing you to mutate the input before returning it. For example:
+    ///
+    /// # Example
+    /// ```
+    /// func loadUp (bankAccount: BankAccount) -> BankAccount {
+    ///     bankAccount
+    ///         .setting(
+    ///             \.balance,
+    ///             to: 90_000
+    ///         )
+    /// }
+    /// ```
+    func setting <Value> (_ keyPath: WritableKeyPath<Self, Value>,
+                          to newValue: Value)
+        -> Self {
+            
+            var copy = self
+            copy[keyPath: keyPath] = newValue
+            return copy
+    }
+    
+    /// This method creates a mutable copy of the receiving instance, writes the given value to the given key path on the copy, and then returns the copy.
+    ///
+    /// This method is useful because it allows you to maintain a function body as just a single expression (meaning you don't have to write `return`) while still allowing you to mutate the input before returning it. For example:
+    ///
+    /// # Example
+    /// ```
+    /// func loadUp (bankAccount: BankAccount) -> BankAccount {
+    ///     bankAccount
+    ///         .setting(
+    ///             \.balance,
+    ///             to: 90_000
+    ///         )
+    /// }
+    /// ```
+    /// - Note:
+    /// This is the convenience overload which allows `newValue` to be nil - when nil is passed in then the receiving instance is simply returned unaltered.
+    func setting <Value> (_ keyPath: WritableKeyPath<Self, Value>,
+                          to newValue: Value?)
+        -> Self {
+            
+        (try? self.setting(keyPath, to: newValue|?)) ?? self
+    }
+    
+    /// This method returns the receiving instance after performing the provided mutation on it.
+    ///
+    /// This method is useful because it allows you to maintain a function body as just a single expression (meaning you don't have to write `return`) while still allowing you to mutate the input before returning it. For example:
+    ///
+    /// # Example
+    /// ```
+    /// func addOneThousand (to bankAccount: BankAccount) -> BankAccount {
+    ///     bankAccount.mutating(\.balance) { $0 += 1000 }
+    /// }
+    /// ```
+    func mutating <Value> (_ keyPath: WritableKeyPath<Self, Value>,
+                           using mutation: (inout Value)throws->()) rethrows
+        -> Self {
+            
+            var mutableCopyOfValue = self[keyPath: keyPath]
+            try mutation(&mutableCopyOfValue)
+            return self.setting(keyPath, to: mutableCopyOfValue)
+    }
+    
+    /// This method returns the receiving instance after performing the provided mutation on it.
+    ///
+    /// This method is useful because it allows you to maintain a function body as just a single expression (meaning you don't have to write `return`) while still allowing you to mutate the input before returning it. For example:
+    ///
+    /// # Example
+    /// ```
+    /// func addOneThousand (to bankAccount: BankAccount) -> BankAccount {
+    ///     bankAccount.mutated { $0.balance += 1000 }
+    /// }
+    /// ```
+    func mutated (by mutation: (inout Self)throws->()) rethrows
+        -> Self {
+        
+        try self.mutating(\.self, using: mutation)
+    }
+    
+    /// This method mutates the receiving instance in place using the provided mutation on the specified key path.
+    mutating func mutate <Value> (_ keyPath: WritableKeyPath<Self, Value>,
+                                  using mutation: (inout Value)throws->()) rethrows {
+        
+        self = try self.mutating(keyPath, using: mutation)
+    }
+    
+    ///
+    mutating func set (to newSelf: Self) {
+        self = newSelf
+    }
+    
+    ///
+    mutating func set (to newSelfGenerator: ()throws->Self) rethrows {
+        self.set(to: try newSelfGenerator())
+    }
+}
