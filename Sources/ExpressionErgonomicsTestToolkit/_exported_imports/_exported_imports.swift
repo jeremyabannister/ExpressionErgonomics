@@ -8,4 +8,4 @@
 ///
 @_exported import ExpressionErgonomics
 @_exported import FoundationTestToolkit
-@_exported import XCTestToolkit
+@_exported import XCTestTestToolkit

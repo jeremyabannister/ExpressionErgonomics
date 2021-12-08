@@ -17,8 +17,8 @@ let package = Package(
             from: "0.1.0"
         ),
         .package(
-            url: "https://github.com/jeremyabannister/XCTestToolkit",
-            from: "0.1.1"
+            url: "https://github.com/jeremyabannister/XCTestTestToolkit",
+            from: "0.1.0"
         ),
     ],
     targets: [
@@ -28,7 +28,7 @@ let package = Package(
         ),
         .target(
             name: "ExpressionErgonomicsTestToolkit",
-            dependencies: ["ExpressionErgonomics", "FoundationTestToolkit", "XCTestToolkit"]
+            dependencies: ["ExpressionErgonomics", "FoundationTestToolkit", "XCTestTestToolkit"]
         ),
         .testTarget(
             name: "ExpressionErgonomics_tests",

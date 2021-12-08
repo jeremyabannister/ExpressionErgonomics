@@ -6,26 +6,26 @@
         "repositoryURL": "https://github.com/jeremyabannister/FoundationTestToolkit",
         "state": {
           "branch": null,
-          "revision": "6a771bdae6bc9af974d6eae13255e920550593c0",
+          "revision": "c99e21c53fe94c540cf703fa662cf55cd3edaca6",
           "version": "0.1.0"
         }
       },
       {
-        "package": "SingleTypeTesting",
-        "repositoryURL": "https://github.com/jeremyabannister/SingleTypeTesting",
+        "package": "SingleTypeTestCase",
+        "repositoryURL": "https://github.com/jeremyabannister/SingleTypeTestCase",
         "state": {
           "branch": null,
-          "revision": "6009f1081513371d2761e293e1217a2135869660",
-          "version": "0.1.0"
-        }
-      },
-      {
-        "package": "XCTestToolkit",
-        "repositoryURL": "https://github.com/jeremyabannister/XCTestToolkit",
-        "state": {
-          "branch": null,
-          "revision": "13c5caa9e603888d4eba8040a9cc508dd9e080fa",
+          "revision": "dc27986f20a91cf2acc0d537cabee98539dee40b",
           "version": "0.1.1"
+        }
+      },
+      {
+        "package": "XCTestTestToolkit",
+        "repositoryURL": "https://github.com/jeremyabannister/XCTestTestToolkit",
+        "state": {
+          "branch": null,
+          "revision": "85c3d97e4b3dd0bc7a1834e3fa08ee4061de3c51",
+          "version": "0.1.0"
         }
       }
     ]
