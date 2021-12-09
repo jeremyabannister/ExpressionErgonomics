@@ -10,6 +10,10 @@ let package = Package(
             name: "ExpressionErgonomics",
             targets: ["ExpressionErgonomics"]
         ),
+        .library(
+            name: "ExpressionErgonomicsTestToolkit",
+            targets: ["ExpressionErgonomicsTestToolkit"]
+        ),
     ],
     dependencies: [
         .package(

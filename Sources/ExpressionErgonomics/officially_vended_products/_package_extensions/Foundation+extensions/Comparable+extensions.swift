@@ -1,5 +1,5 @@
 //
-//  Comparable+expressionErgonomics.swift
+//  Comparable+extensions.swift
 //  
 //
 //  Created by Jeremy Bannister on 12/7/21.
