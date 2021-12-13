@@ -15,6 +15,10 @@ extension DateFormatter: ExpressionErgonomic { }
 extension Dictionary: ExpressionErgonomic { }
 extension Double: ExpressionErgonomic { }
 extension Int: ExpressionErgonomic { }
+extension Int8: ExpressionErgonomic { }
+extension Int16: ExpressionErgonomic { }
+extension Int32: ExpressionErgonomic { }
+extension Int64: ExpressionErgonomic { }
 extension JSONDecoder: ExpressionErgonomic { }
 extension JSONEncoder: ExpressionErgonomic { }
 extension Optional: ExpressionErgonomic { }
