@@ -43,3 +43,19 @@ public extension Bool {
         self.and(!other)
     }
 }
+
+///
+public extension Bool {
+    
+    /// Returns the opposite value to the receiving `Bool`.
+    var isNotTrue: Bool {
+        !self
+    }
+    
+    /// If the receiving `Bool` is true then the given closure is executed, otherwise it is not executed.
+    func ifSo (_ conditionalAction: ()->()) {
+        if self {
+            conditionalAction()
+        }
+    }
+}
