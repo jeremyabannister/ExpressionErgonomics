@@ -7,5 +7,4 @@
 
 ///
 @_exported import ExpressionErgonomics
-@_exported import FoundationTestToolkit
-@_exported import XCTestTestToolkit
+@_exported import Testable

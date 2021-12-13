@@ -2,30 +2,30 @@
   "object": {
     "pins": [
       {
-        "package": "FoundationTestToolkit",
-        "repositoryURL": "https://github.com/jeremyabannister/FoundationTestToolkit",
+        "package": "ErrorMessage",
+        "repositoryURL": "https://github.com/jeremyabannister/ErrorMessage",
         "state": {
           "branch": null,
-          "revision": "c99e21c53fe94c540cf703fa662cf55cd3edaca6",
-          "version": "0.1.0"
-        }
-      },
-      {
-        "package": "SingleTypeTestCase",
-        "repositoryURL": "https://github.com/jeremyabannister/SingleTypeTestCase",
-        "state": {
-          "branch": null,
-          "revision": "dc27986f20a91cf2acc0d537cabee98539dee40b",
+          "revision": "1468d23676022016c33870feb501b29939ff5722",
           "version": "0.1.1"
         }
       },
       {
-        "package": "XCTestTestToolkit",
-        "repositoryURL": "https://github.com/jeremyabannister/XCTestTestToolkit",
+        "package": "Testable",
+        "repositoryURL": "https://github.com/jeremyabannister/Testable",
         "state": {
           "branch": null,
-          "revision": "85c3d97e4b3dd0bc7a1834e3fa08ee4061de3c51",
-          "version": "0.1.0"
+          "revision": "5eb6bfd344bbf0fea93cf59027a13dcb52825a47",
+          "version": "0.1.2"
+        }
+      },
+      {
+        "package": "XCTestToolkit",
+        "repositoryURL": "https://github.com/jeremyabannister/XCTestToolkit",
+        "state": {
+          "branch": null,
+          "revision": "12e9e9cb6ae61489a5e872b7e086db9b03f2ea2e",
+          "version": "0.1.2"
         }
       }
     ]
