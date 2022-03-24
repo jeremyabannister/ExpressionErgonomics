@@ -47,9 +47,9 @@ public extension Bool {
 ///
 public extension Bool {
     
-    /// Returns the opposite value to the receiving `Bool`.
+    /// Returns the opposite value of the receiving `Bool`.
     var isNotTrue: Bool {
-        !self
+        isFalse
     }
     
     /// If the receiving `Bool` is true then the given closure is executed, otherwise it is not executed.
@@ -57,5 +57,19 @@ public extension Bool {
         if self {
             conditionalAction()
         }
+    }
+}
+
+///
+public extension Bool {
+    
+    ///
+    var isTrue: Bool {
+        self
+    }
+    
+    ///
+    var isFalse: Bool {
+        !self
     }
 }
