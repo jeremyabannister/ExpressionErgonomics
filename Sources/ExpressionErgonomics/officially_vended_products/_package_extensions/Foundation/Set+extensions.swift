@@ -18,3 +18,12 @@ public extension Set {
         self.mutated { $0.remove(member) }
     }
 }
+
+///
+public extension Set {
+    
+    ///
+    func doesNotContain (_ element: Element) -> Bool {
+        !self.contains(element)
+    }
+}
