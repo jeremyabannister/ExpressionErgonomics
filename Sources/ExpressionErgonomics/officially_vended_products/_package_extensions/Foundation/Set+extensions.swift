@@ -8,6 +8,18 @@
 ///
 public extension Set {
     
+    ///
+    func tryInserting
+        (_ newMember: Element?)
+    -> Self {
+        
+        newMember.map { self.inserting($0) } ?? self
+    }
+}
+
+///
+public extension Set {
+    
     /// This method returns this set after inserting the given member into it.
     func inserting (_ newMember: Element) -> Self {
         self.mutated { $0.insert(newMember) }

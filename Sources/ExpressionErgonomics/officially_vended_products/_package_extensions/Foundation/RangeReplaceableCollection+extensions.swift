@@ -10,8 +10,8 @@ public extension RangeReplaceableCollection {
     
     ///
     func tryAppending
-    <Elements: Collection>
-    (_ elements: Elements?)
+        <Elements: Collection>
+        (_ elements: Elements?)
     -> Self
     where Elements.Element == Element {
         
@@ -20,8 +20,8 @@ public extension RangeReplaceableCollection {
     
     ///
     func appending
-    <Elements: Collection>
-    (_ elements: Elements)
+        <Elements: Collection>
+        (_ elements: Elements)
     -> Self
     where Elements.Element == Element {
         
@@ -44,8 +44,8 @@ public extension RangeReplaceableCollection {
     
     ///
     func tryPrepending
-    <Elements: Collection>
-    (_ elements: Elements?)
+        <Elements: Collection>
+        (_ elements: Elements?)
     -> Self
     where Elements.Element == Element {
         
@@ -54,8 +54,8 @@ public extension RangeReplaceableCollection {
     
     ///
     func prepending
-    <Elements: Collection>
-    (_ elements: Elements)
+        <Elements: Collection>
+        (_ elements: Elements)
     -> Self
     where Elements.Element == Element {
         
@@ -78,8 +78,8 @@ public extension RangeReplaceableCollection {
     
     ///
     func tryInserting
-    <Elements: Collection>
-    (_ elements: Elements?,
+        <Elements: Collection>
+        (_ elements: Elements?,
      at index: Index)
     -> Self
     where Elements.Element == Element {
@@ -93,9 +93,9 @@ public extension RangeReplaceableCollection {
     
     ///
     func inserting
-    <Elements: Collection>
-    (_ elements: Elements,
-     at index: Index)
+        <Elements: Collection>
+        (_ elements: Elements,
+         at index: Index)
     -> Self
     where Elements.Element == Element {
         
