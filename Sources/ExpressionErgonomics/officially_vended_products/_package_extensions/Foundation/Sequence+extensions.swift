@@ -9,6 +9,20 @@
 public extension Sequence {
     
     ///
+    func handlingEach (with handler: (Element)throws->()) rethrows -> Self {
+        
+        ///
+        try self.forEach(handler)
+        
+        ///
+        return self
+    }
+}
+
+///
+public extension Sequence {
+    
+    ///
     func doesNotContain
         (where predicate: (Element)throws->Bool)
     rethrows -> Bool {
