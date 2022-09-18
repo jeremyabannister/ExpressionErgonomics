@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/ErrorMessage",
         "state": {
           "branch": null,
-          "revision": "1468d23676022016c33870feb501b29939ff5722",
-          "version": "0.1.1"
+          "revision": "a0b253ecbfcc8035e88e26f3b4f841ec0fe9a03d",
+          "version": "0.1.2"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/Testable",
         "state": {
           "branch": null,
-          "revision": "5eb6bfd344bbf0fea93cf59027a13dcb52825a47",
-          "version": "0.1.2"
+          "revision": "3d8ce23094a80bf10820668459b2659a9ede4997",
+          "version": "0.1.4"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/XCTestToolkit",
         "state": {
           "branch": null,
-          "revision": "12e9e9cb6ae61489a5e872b7e086db9b03f2ea2e",
-          "version": "0.1.2"
+          "revision": "b564a62731a30b434d110b8d43775707a15dd227",
+          "version": "0.1.3"
         }
       }
     ]

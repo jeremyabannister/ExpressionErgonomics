@@ -1,7 +1,9 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.7
 
+///
 import PackageDescription
 
+///
 let package = Package(
     name: "ExpressionErgonomics",
     products: [
@@ -17,7 +19,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/jeremyabannister/Testable",
-            from: "0.1.2"
+            from: "0.1.4"
         ),
     ],
     targets: [
@@ -27,7 +29,10 @@ let package = Package(
         ),
         .target(
             name: "ExpressionErgonomicsTestToolkit",
-            dependencies: ["ExpressionErgonomics", "Testable"]
+            dependencies: [
+                "ExpressionErgonomics",
+                .product(name: "TestableTestToolkit", package: "Testable")
+            ]
         ),
         .testTarget(
             name: "ExpressionErgonomics_tests",
