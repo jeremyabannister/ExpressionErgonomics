@@ -1,34 +1,32 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "ErrorMessage",
-        "repositoryURL": "https://github.com/jeremyabannister/ErrorMessage",
-        "state": {
-          "branch": null,
-          "revision": "a0b253ecbfcc8035e88e26f3b4f841ec0fe9a03d",
-          "version": "0.1.2"
-        }
-      },
-      {
-        "package": "Testable",
-        "repositoryURL": "https://github.com/jeremyabannister/Testable",
-        "state": {
-          "branch": null,
-          "revision": "3d8ce23094a80bf10820668459b2659a9ede4997",
-          "version": "0.1.4"
-        }
-      },
-      {
-        "package": "XCTestToolkit",
-        "repositoryURL": "https://github.com/jeremyabannister/XCTestToolkit",
-        "state": {
-          "branch": null,
-          "revision": "b564a62731a30b434d110b8d43775707a15dd227",
-          "version": "0.1.3"
-        }
+  "pins" : [
+    {
+      "identity" : "errormessage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/ErrorMessage",
+      "state" : {
+        "revision" : "a0b253ecbfcc8035e88e26f3b4f841ec0fe9a03d",
+        "version" : "0.1.2"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "testable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Testable",
+      "state" : {
+        "revision" : "d59eee3f61455d35baea4c8cd153ac342b4b3617",
+        "version" : "0.1.6"
+      }
+    },
+    {
+      "identity" : "xctesttoolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/XCTestToolkit",
+      "state" : {
+        "revision" : "ad6a4de96c7ff31435afb1945f719a30edc867ad",
+        "version" : "0.1.5"
+      }
+    }
+  ],
+  "version" : 2
 }

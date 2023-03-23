@@ -6,6 +6,4 @@
 //
 
 ///
-public protocol ExpressionErgonomic {
-    
-}
+public protocol ExpressionErgonomic: Testable { }

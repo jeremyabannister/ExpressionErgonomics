@@ -19,13 +19,15 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/jeremyabannister/Testable",
-            from: "0.1.4"
+            from: "0.1.6"
         ),
     ],
     targets: [
         .target(
             name: "ExpressionErgonomics",
-            dependencies: []
+            dependencies: [
+                "Testable",
+            ]
         ),
         .target(
             name: "ExpressionErgonomicsTestToolkit",
