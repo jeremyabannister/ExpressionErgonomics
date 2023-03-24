@@ -18,31 +18,38 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/jeremyabannister/Testable",
-            from: "0.1.6"
+            url: "https://github.com/jeremyabannister/Testable-module",
+            from: "0.1.0"
         ),
     ],
     targets: [
         .target(
             name: "ExpressionErgonomics",
             dependencies: [
-                "Testable",
+                "Testable-module",
             ]
         ),
         .target(
             name: "ExpressionErgonomicsTestToolkit",
             dependencies: [
                 "ExpressionErgonomics",
-                .product(name: "TestableTestToolkit", package: "Testable")
+                .product(
+                    name: "TestableTestToolkit",
+                    package: "Testable-module"
+                ),
             ]
         ),
         .testTarget(
             name: "ExpressionErgonomics_tests",
-            dependencies: ["ExpressionErgonomicsTestToolkit"]
+            dependencies: [
+                "ExpressionErgonomicsTestToolkit",
+            ]
         ),
         .testTarget(
             name: "ExpressionErgonomicsTestToolkit_tests",
-            dependencies: ["ExpressionErgonomicsTestToolkit"]
+            dependencies: [
+                "ExpressionErgonomicsTestToolkit",
+            ]
         ),
     ]
 )

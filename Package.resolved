@@ -1,21 +1,21 @@
 {
   "pins" : [
     {
-      "identity" : "errormessage",
+      "identity" : "errormessage-module",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/ErrorMessage",
+      "location" : "https://github.com/jeremyabannister/ErrorMessage-module",
       "state" : {
-        "revision" : "a0b253ecbfcc8035e88e26f3b4f841ec0fe9a03d",
-        "version" : "0.1.2"
+        "revision" : "4eea71d7b3dc1a24fb0a69871009265819ec7ec5",
+        "version" : "0.1.0"
       }
     },
     {
-      "identity" : "testable",
+      "identity" : "testable-module",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/Testable",
+      "location" : "https://github.com/jeremyabannister/Testable-module",
       "state" : {
-        "revision" : "d59eee3f61455d35baea4c8cd153ac342b4b3617",
-        "version" : "0.1.6"
+        "revision" : "b0642c654d854c391c4c88ca112a8b3433028fa9",
+        "version" : "0.1.0"
       }
     },
     {

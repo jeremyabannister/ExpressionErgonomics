@@ -7,4 +7,4 @@
 
 ///
 @_exported import Foundation
-@_exported import Testable
+@_exported import Testable_module
