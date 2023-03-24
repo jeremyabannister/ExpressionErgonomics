@@ -40,13 +40,13 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "ExpressionErgonomics_tests",
+            name: "ExpressionErgonomics-tests",
             dependencies: [
                 "ExpressionErgonomicsTestToolkit",
             ]
         ),
         .testTarget(
-            name: "ExpressionErgonomicsTestToolkit_tests",
+            name: "ExpressionErgonomicsTestToolkit-tests",
             dependencies: [
                 "ExpressionErgonomicsTestToolkit",
             ]
