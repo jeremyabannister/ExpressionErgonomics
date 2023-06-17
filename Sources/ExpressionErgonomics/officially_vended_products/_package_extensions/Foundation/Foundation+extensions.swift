@@ -26,6 +26,11 @@ extension Range: ExpressionErgonomic { }
 extension Result: ExpressionErgonomic { }
 extension Set: ExpressionErgonomic { }
 extension String: ExpressionErgonomic { }
+extension UInt: ExpressionErgonomic { }
+extension UInt8: ExpressionErgonomic { }
+extension UInt16: ExpressionErgonomic { }
+extension UInt32: ExpressionErgonomic { }
+extension UInt64: ExpressionErgonomic { }
 extension URL: ExpressionErgonomic { }
 extension URLComponents: ExpressionErgonomic { }
 extension URLRequest: ExpressionErgonomic { }
