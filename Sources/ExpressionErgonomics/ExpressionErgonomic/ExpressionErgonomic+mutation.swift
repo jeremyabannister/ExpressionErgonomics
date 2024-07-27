@@ -6,7 +6,7 @@
 //
 
 ///
-public extension ExpressionErgonomic {
+extension ExpressionErgonomic {
     
     /// This method creates a mutable copy of the receiving instance, writes the given value to the given key path on the copy, and then returns the copy.
     ///
@@ -22,13 +22,21 @@ public extension ExpressionErgonomic {
     ///         )
     /// }
     /// ```
-    func setting <Value> (_ keyPath: WritableKeyPath<Self, Value>,
-                          to newValue: Value)
-        -> Self {
-            
-            var copy = self
-            copy[keyPath: keyPath] = newValue
-            return copy
+    public func setting<
+        Value
+    >(
+        _ keyPath: WritableKeyPath<Self, Value>,
+        to newValue: Value
+    ) -> Self {
+        
+        ///
+        var copy = self
+        
+        ///
+        copy[keyPath: keyPath] = newValue
+        
+        ///
+        return copy
     }
     
     /// This method creates a mutable copy of the receiving instance, writes the given value (if it is not nil) to the given key path on the copy, and then returns the copy.
@@ -45,9 +53,12 @@ public extension ExpressionErgonomic {
     ///         )
     /// }
     /// ```
-    func trySetting <Value> (_ keyPath: WritableKeyPath<Self, Value>,
-                             to newValue: Value?)
-        -> Self {
+    public func trySetting<
+        Value
+    >(
+        _ keyPath: WritableKeyPath<Self, Value>,
+        to newValue: Value?
+    ) -> Self {
         
         ///
         guard let newValue = newValue else { return self }
@@ -66,13 +77,21 @@ public extension ExpressionErgonomic {
     ///     bankAccount.mutating(\.balance) { $0 += 1000 }
     /// }
     /// ```
-    func mutating <Value> (_ keyPath: WritableKeyPath<Self, Value>,
-                           using mutation: (inout Value)throws->()) rethrows
-        -> Self {
+    public func mutating<
+        Value
+    >(
+        _ keyPath: WritableKeyPath<Self, Value>,
+        using mutation: (inout Value)throws->()
+    ) rethrows -> Self {
             
-            var mutableCopyOfValue = self[keyPath: keyPath]
-            try mutation(&mutableCopyOfValue)
-            return self.setting(keyPath, to: mutableCopyOfValue)
+        ///
+        var mutableCopyOfValue = self[keyPath: keyPath]
+        
+        ///
+        try mutation(&mutableCopyOfValue)
+        
+        ///
+        return self.setting(keyPath, to: mutableCopyOfValue)
     }
     
     /// This method returns the receiving instance after performing the provided mutation on it.
@@ -85,26 +104,50 @@ public extension ExpressionErgonomic {
     ///     bankAccount.mutated { $0.balance += 1000 }
     /// }
     /// ```
-    func mutated (by mutation: (inout Self)throws->()) rethrows
-        -> Self {
+    public func mutated(
+        by mutation: (inout Self)throws->()
+    ) rethrows -> Self {
         
-        try self.mutating(\.self, using: mutation)
+        ///
+        try self.mutating(
+            \.self,
+             using: mutation
+        )
     }
     
     /// This method mutates the receiving instance in place using the provided mutation on the specified key path.
-    mutating func mutate <Value> (_ keyPath: WritableKeyPath<Self, Value>,
-                                  using mutation: (inout Value)throws->()) rethrows {
+    public mutating func mutate<
+        Value
+    >(
+        _ keyPath: WritableKeyPath<Self, Value>,
+        using mutation: (inout Value)throws->()
+    ) rethrows {
         
-        self = try self.mutating(keyPath, using: mutation)
+        ///
+        self =
+            try self.mutating(
+                keyPath,
+                using: mutation
+            )
     }
     
     ///
-    mutating func set (to newSelf: Self) {
+    public mutating func set(
+        to newSelf: Self
+    ) {
+        
+        ///
         self = newSelf
     }
     
     ///
-    mutating func set (to newSelfGenerator: ()throws->Self) rethrows {
-        self.set(to: try newSelfGenerator())
+    public mutating func set(
+        to newSelfGenerator: ()throws->Self
+    ) rethrows {
+        
+        ///
+        self.set(
+            to: try newSelfGenerator()
+        )
     }
 }

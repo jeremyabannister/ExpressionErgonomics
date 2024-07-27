@@ -6,25 +6,25 @@
 //
 
 ///
-public extension AdditiveArithmetic {
+extension AdditiveArithmetic {
     
     /// A sometimes more ergonomic way to access the `+` operator on `AdditiveArithmetic` types.
-    func plus (_ other: Self) -> Self {
+    public func plus(_ other: Self) -> Self {
         self + other
     }
     
     /// A sometimes more ergonomic way to access the `+=` operator on `AdditiveArithmetic` types.
-    mutating func plusEquals (_ other: Self) {
+    public mutating func plusEquals(_ other: Self) {
         self += other
     }
     
     /// A sometimes more ergonomic way to access the `-` operator on `AdditiveArithmetic` types.
-    func minus (_ other: Self) -> Self {
+    public func minus(_ other: Self) -> Self {
         self - other
     }
     
     /// A sometimes more ergonomic way to access the `-=` operator on `AdditiveArithmetic` types.
-    mutating func minusEquals (_ other: Self) {
+    public mutating func minusEquals(_ other: Self) {
         self -= other
     }
 }

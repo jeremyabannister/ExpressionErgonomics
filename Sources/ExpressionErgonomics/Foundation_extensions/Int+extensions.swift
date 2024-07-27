@@ -6,10 +6,10 @@
 //
 
 ///
-public extension Int {
+extension Int {
     
     ///
-    var asUInt: UInt? {
+    public var asUInt: UInt? {
         self.isGreaterThanOrEqual(to: 0) ? UInt(self) : nil
     }
 }

@@ -6,19 +6,19 @@
 //
 
 ///
-public extension Collection {
+extension Collection {
     
     ///
-    var count_asUInt: UInt {
+    public var count_asUInt: UInt {
         count.asUInt!
     }
 }
 
 ///
-public extension Collection {
+extension Collection {
     
     /// `isNotEmpty` is simply a sometimes-more-ergonomic way to refer to `!isEmpty`.
-    var isNotEmpty: Bool {
+    public var isNotEmpty: Bool {
         return !isEmpty
     }
 }

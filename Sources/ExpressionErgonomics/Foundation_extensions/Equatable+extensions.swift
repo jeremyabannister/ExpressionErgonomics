@@ -6,49 +6,49 @@
 //
 
 ///
-public extension Equatable {
+extension Equatable {
     
     ///
-    func isNotEqual (to other: Self) -> Bool {
+    public func isNotEqual(to other: Self) -> Bool {
         self.doesNotEqual(other)
     }
     
     ///
-    func isNotEqual (to other: Self?) -> Bool {
+    public func isNotEqual(to other: Self?) -> Bool {
         self.doesNotEqual(other)
     }
     
     ///
-    func doesNotEqual (_ other: Self) -> Bool {
+    public func doesNotEqual(_ other: Self) -> Bool {
         self != other
     }
     
     ///
-    func doesNotEqual (_ other: Self?) -> Bool {
+    public func doesNotEqual(_ other: Self?) -> Bool {
         self != other
     }
 }
 
 ///
-public extension Equatable {
+extension Equatable {
     
     ///
-    func isEqual (to other: Self) -> Bool {
+    public func isEqual(to other: Self) -> Bool {
         self.equals(other)
     }
     
     ///
-    func isEqual (to other: Self?) -> Bool {
+    public func isEqual(to other: Self?) -> Bool {
         self.equals(other)
     }
     
     ///
-    func equals (_ other: Self) -> Bool {
+    public func equals(_ other: Self) -> Bool {
         self == other
     }
     
     ///
-    func equals (_ other: Self?) -> Bool {
+    public func equals(_ other: Self?) -> Bool {
         self == other
     }
 }

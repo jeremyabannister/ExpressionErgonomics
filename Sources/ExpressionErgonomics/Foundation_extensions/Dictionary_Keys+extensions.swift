@@ -6,10 +6,14 @@
 //
 
 ///
-public extension Dictionary.Keys {
+extension Dictionary.Keys {
     
     ///
-    func doesNotContain (_ element: Element) -> Bool {
+    public func doesNotContain(
+        _ element: Element
+    ) -> Bool {
+        
+        ///
         !self.contains(element)
     }
 }

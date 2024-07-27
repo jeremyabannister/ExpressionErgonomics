@@ -9,7 +9,7 @@
 extension FloatingPoint {
     
     ///
-    public func divided (by divisor: Self) -> Self {
+    public func divided(by divisor: Self) -> Self {
         self / divisor
     }
 }

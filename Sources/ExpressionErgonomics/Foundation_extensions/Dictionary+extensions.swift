@@ -9,9 +9,10 @@
 extension Dictionary {
     
     ///
-    public mutating func `set`
-        (key: Key,
-         to newValue: Value?) {
+    public mutating func `set`(
+        key: Key,
+        to newValue: Value?
+    ) {
         
         ///
         self[key] = newValue

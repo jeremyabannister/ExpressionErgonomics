@@ -6,10 +6,11 @@
 //
 
 ///
-public extension SignedNumeric where Self: Comparable {
+extension SignedNumeric
+    where Self: Comparable {
     
     ///
-    var absoluteValue: Self {
+    public var absoluteValue: Self {
         abs(self)
     }
 }

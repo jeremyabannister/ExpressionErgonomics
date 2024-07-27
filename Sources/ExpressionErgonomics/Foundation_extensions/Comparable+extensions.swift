@@ -6,25 +6,25 @@
 //
 
 ///
-public extension Comparable {
+extension Comparable {
     
     ///
-    func isGreater (than other: Self) -> Bool {
+    public func isGreater(than other: Self) -> Bool {
         self > other
     }
     
     ///
-    func isGreaterThanOrEqual (to other: Self) -> Bool {
+    public func isGreaterThanOrEqual(to other: Self) -> Bool {
         self >= other
     }
     
     ///
-    func isLess (than other: Self) -> Bool {
+    public func isLess(than other: Self) -> Bool {
         self < other
     }
     
     ///
-    func isLessThanOrEqual (to other: Self) -> Bool {
+    public func isLessThanOrEqual(to other: Self) -> Bool {
         self <= other
     }
 }

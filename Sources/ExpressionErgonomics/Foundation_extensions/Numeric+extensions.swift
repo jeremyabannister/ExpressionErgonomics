@@ -6,10 +6,10 @@
 //
 
 ///
-public extension Numeric {
+extension Numeric {
     
     /// A sometimes-more-ergonomic way to access the `*` operator for `Numeric` types.
-    func times (_ other: Self) -> Self {
+    public func times(_ other: Self) -> Self {
         self * other
     }
 }
