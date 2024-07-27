@@ -6,4 +6,4 @@
 //
 
 ///
-public protocol ExpressionErgonomic: Testable { }
+public protocol ExpressionErgonomic: SupportsArbitraryAssertions { }

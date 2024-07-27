@@ -1,20 +1,20 @@
 {
   "pins" : [
     {
-      "identity" : "errormessage-module",
+      "identity" : "assertiontoolkit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/ErrorMessage-module",
+      "location" : "https://github.com/jeremyabannister/AssertionToolkit",
       "state" : {
-        "revision" : "4eea71d7b3dc1a24fb0a69871009265819ec7ec5",
+        "revision" : "f566c1fbaf5567c8005bfa0b734357900b455e84",
         "version" : "0.1.0"
       }
     },
     {
-      "identity" : "testable-module",
+      "identity" : "errormessage-package",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/Testable-module",
+      "location" : "https://github.com/jeremyabannister/ErrorMessage-package",
       "state" : {
-        "revision" : "b0642c654d854c391c4c88ca112a8b3433028fa9",
+        "revision" : "317e7dbba44dc6e28a4a169975d95e1a5ed5911b",
         "version" : "0.1.0"
       }
     },
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/XCTestToolkit",
       "state" : {
-        "revision" : "ad6a4de96c7ff31435afb1945f719a30edc867ad",
-        "version" : "0.1.5"
+        "revision" : "da14ae755f67262ae27d863b41a6ac9514f4db98",
+        "version" : "0.2.4"
       }
     }
   ],

@@ -13,7 +13,7 @@ extension AdditiveArithmetic_tests {
         func test <T> (_ a: T,
                        _ b: T,
                        _ c: T) throws
-            where T: Subject, T: Testable {
+            where T: AdditiveArithmetic {
             
             try a.plus(b).assertEqual(to: c)
         }
@@ -33,7 +33,7 @@ extension AdditiveArithmetic_tests {
         func test <T> (_ a: T,
                        _ b: T,
                        _ c: T) throws
-            where T: Subject, T: Testable {
+            where T: AdditiveArithmetic {
             
             var copy = a
             copy.plusEquals(b)
@@ -55,7 +55,7 @@ extension AdditiveArithmetic_tests {
         func test <T> (_ a: T,
                        _ b: T,
                        _ c: T) throws
-            where T: Subject, T: Testable {
+            where T: AdditiveArithmetic {
             
             try a.minus(b).assertEqual(to: c)
         }
@@ -75,7 +75,7 @@ extension AdditiveArithmetic_tests {
         func test <T> (_ a: T,
                        _ b: T,
                        _ c: T) throws
-            where T: Subject, T: Testable {
+            where T: AdditiveArithmetic {
             
             var copy = a
             copy.minusEquals(b)

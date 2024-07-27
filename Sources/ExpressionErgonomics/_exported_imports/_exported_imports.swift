@@ -6,5 +6,4 @@
 //
 
 ///
-@_exported import Foundation
-@_exported import Testable_module
+@_exported import AssertionToolkit

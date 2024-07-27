@@ -7,4 +7,4 @@
 
 ///
 @_exported import ExpressionErgonomics
-@_exported import TestableTestToolkit
+@_exported import AssertionTestToolkit

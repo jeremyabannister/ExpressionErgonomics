@@ -18,15 +18,15 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/jeremyabannister/Testable-module",
-            from: "0.1.0"
+            url: "https://github.com/jeremyabannister/AssertionToolkit",
+            "0.1.0" ..< "0.2.0"
         ),
     ],
     targets: [
         .target(
             name: "ExpressionErgonomics",
             dependencies: [
-                "Testable-module",
+                "AssertionToolkit",
             ]
         ),
         .target(
@@ -34,8 +34,8 @@ let package = Package(
             dependencies: [
                 "ExpressionErgonomics",
                 .product(
-                    name: "TestableTestToolkit",
-                    package: "Testable-module"
+                    name: "AssertionTestToolkit",
+                    package: "AssertionToolkit"
                 ),
             ]
         ),
