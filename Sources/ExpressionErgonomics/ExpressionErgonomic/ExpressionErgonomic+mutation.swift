@@ -116,6 +116,21 @@ extension ExpressionErgonomic {
     }
     
     /// This method mutates the receiving instance in place using the provided mutation on the specified key path.
+    public mutating func mutate(
+        using mutation: (inout Self)throws->()
+    ) rethrows {
+        
+        ///
+        var copy = self
+        
+        ///
+        try mutation(&copy)
+        
+        ///
+        self = copy
+    }
+    
+    /// This method mutates the receiving instance in place using the provided mutation on the specified key path.
     public mutating func mutate<
         Value
     >(
