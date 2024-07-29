@@ -1,13 +1,13 @@
 {
-  "originHash" : "7eb151509915033b85059b8105b9c63c9f9901ddef43ce3e4c1d87804ae55b2b",
+  "originHash" : "637931463eed07f3ca482703fa31ab22135182c495c45b2791782b17ebb4729f",
   "pins" : [
     {
       "identity" : "assertiontoolkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/AssertionToolkit",
       "state" : {
-        "revision" : "b0e7ae2121b12126bc6ff9f71bbfd057e5bb0f3f",
-        "version" : "0.1.1"
+        "revision" : "32a8cce09460a03fd5fb0b71cfb787c84cdb1ce7",
+        "version" : "0.1.2"
       }
     },
     {
