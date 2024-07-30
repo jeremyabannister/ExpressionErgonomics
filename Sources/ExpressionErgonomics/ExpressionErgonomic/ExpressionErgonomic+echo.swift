@@ -34,7 +34,7 @@ extension ExpressionErgonomic {
     }
     
     ///
-    func echoed(
+    public func echoed(
         as tag: String? = nil
     ) -> Self {
         
