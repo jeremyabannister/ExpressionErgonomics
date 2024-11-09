@@ -1,9 +1,7 @@
-// swift-tools-version:5.10
+// swift-tools-version:6.0
 
-///
 import PackageDescription
 
-///
 let package = Package(
     name: "ExpressionErgonomics",
     products: [
@@ -19,7 +17,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/jeremyabannister/AssertionToolkit",
-            "0.1.2" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.3")
         ),
     ],
     targets: [
