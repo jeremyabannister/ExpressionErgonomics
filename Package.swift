@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/jeremyabannister/AssertionToolkit",
-            .upToNextMinor(from: "0.1.3")
+            .upToNextMinor(from: "0.1.4")
         ),
     ],
     targets: [
